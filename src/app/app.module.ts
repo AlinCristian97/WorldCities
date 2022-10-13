@@ -10,6 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { CitiesComponent } from './cities/cities.component';
 import { CountriesComponent } from './countries/countries.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CityEditComponent } from './cities/city-edit.component';
+import { CountryEditComponent } from './countries/country-edit.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +20,17 @@ import { CountriesComponent } from './countries/countries.component';
     HomeComponent,
     NavMenuComponent,
     CitiesComponent,
-    CountriesComponent
+    CountriesComponent,
+    CityEditComponent,
+    CountryEditComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
